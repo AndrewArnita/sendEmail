@@ -1,0 +1,23 @@
+<form id="contactForm" name="sentMessage" novalidate="novalidate">
+    <div class="row align-items-stretch mb-5">
+        <div class="col-md-5">
+            <div class="form-group">
+                <input [(ngModel)]="cm.email" name="something1" class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." />
+                <p class="help-block text-danger"></p>
+            </div>
+            <button class="btn btn-primary btn-xl text-uppercase" type="submit" (click)= 'sendEmailTo()'>Register</button>
+        </div>
+        <!-- <div class="col-md-6">
+            <div class="form-group">
+                <input [(ngModel)]="cm.subject" name="something2" class="form-control" id="subject" type="text" placeholder="Subject *" required data-validation-required-message="Please enter the subject of the email." />
+                <p class="help-block text-danger"></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group form-group-textarea mb-md-0">
+                <textarea [(ngModel)]="cm.message" name="something3" class="form-control" id="message" placeholder="Message *" required data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+            </div>
+        </div> -->
+    </div>
+</form>
