@@ -28,7 +28,7 @@ export class ContactFormComponent implements OnInit {
       // subject: this.cm.subject,
       // message: this.cm.message
     }
-    this.apiCaller.post("http://localhost:3000/sendEmail", user, options).subscribe(() => {
+    this.apiCaller.post("https://sendemail117.herokuapp.com/sendEmail", user, options).subscribe(() => {
       this.cm.email = '';
       // this.cm.subject = '';
       // this.cm.message = '';
@@ -36,26 +36,3 @@ export class ContactFormComponent implements OnInit {
     window.location.reload();
   }
 }
-
-
-
-    
-//     alert("Email sent by " + this.cm.email + " was successfully received by Andrew!");
-//     const headers= new HttpHeaders({
-//       "Content-Type": "application/json"
-//     });
-
-//     const options = {headers: headers};
-
-//     this.apiCaller.post(
-//       'http://localhost:3000/sendEmail',
-//       this.cm,
-//       options
-//     ).subscribe(() => {
-//       this.cm.email = '';
-//       this.cm.subject = '';
-//       this.cm.message = '';
-//     })
-//     window.location.reload()
-//   }
-// }
