@@ -28,7 +28,7 @@ export class ContactFormComponent implements OnInit {
       // subject: this.cm.subject,
       // message: this.cm.message
     }
-    this.apiCaller.post("https://sendemail117.herokuapp.com/sendEmail", user, options).subscribe(() => {
+    this.apiCaller.post("http://localhost:3000/sendEmail", user, options).subscribe(() => {
       this.cm.email = '';
       // this.cm.subject = '';
       // this.cm.message = '';
